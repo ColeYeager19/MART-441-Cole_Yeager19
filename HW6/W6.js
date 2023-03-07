@@ -1,8 +1,5 @@
 // JavaScript Document
 
-//Temp Code
-
-//DONT TOUCH, WORKING FINE
 function myFunction() {
 	var firstname = document.getElementById("firstname").value;
 	console.log(firstname);
@@ -17,7 +14,6 @@ function myFunction3() {
 	var age = document.getElementById("age").value;
 	console.log(age);
 }
-//END DONT TOUCH
 
 function setInformation() {
 	document.getElementById("info").innerHTML = firstname;
@@ -26,7 +22,6 @@ function setInformation() {
 	document.getElementById("info4").innerHTML = attempts;
 }
 
-//WORKING
 var imageTags = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14", "image15", "image16", "image17", "image18", "image19", "image20","image21", "image22", "image23", "image24"];
 
 var blankImagePath = "images/Blank.jpg";
@@ -94,8 +89,3 @@ var flipBackCounter = 0;
 
 var attempts = 0;
 var cormatch = 0;
-//END WORKING
-
-	
-
-
