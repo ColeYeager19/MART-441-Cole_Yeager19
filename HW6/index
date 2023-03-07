@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Week 6</title>
+<script src="W6.js"></script>
+<link rel="stylesheet" type="text/css" href="W6.css">
+</head>
+
+<body onload="printBlanks();">
+    <h1>Dog Memory Game</h1>
+
+	<h2>Insert First Name:</h2>
+<input id="firstname"> 
+<button onClick="myFunction()">Submit</button>
+	
+	<h2>Insert Last Name:</h2>
+<input id="lastname"> 
+<button onClick="myFunction2()">Submit</button>
+	
+	<h2>Insert Age:</h2>
+<input id="age"> 
+<button onClick="myFunction3()">Submit</button>
+	
+    <div class="divTable">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 1" id="image1" width="200" height="150" onclick="flipImage(0);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 2" id="image2" width="200" height="150" onclick="flipImage(1);"></div>
+            </div>
+			
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 3" id="image3" width="200" height="150" onclick="flipImage(2);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 4" id="image4" width="200" height="150" onclick="flipImage(3);"></div>
+            </div>
+			
+			            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 5" id="image5" width="200" height="150" onclick="flipImage(4);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 6" id="image6" width="200" height="150" onclick="flipImage(5);"></div>
+            </div>
+			 <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 7" id="image7" width="200" height="150" onclick="flipImage(6);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 8" id="image8" width="200" height="150" onclick="flipImage(7);"></div>
+            </div>
+			
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 9" id="image9" width="200" height="150" onclick="flipImage(8);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 10" id="image10" width="200" height="150" onclick="flipImage(9);"></div>
+            </div>
+			
+			            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 11" id="image11" width="200" height="150" onclick="flipImage(10);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 12" id="image12" width="200" height="150" onclick="flipImage(11);"></div>
+            </div>
+			
+			          <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 13" id="image13" width="200" height="150" onclick="flipImage(12);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 14" id="image14" width="200" height="150" onclick="flipImage(13);"></div>
+            </div>
+			 <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 15" id="image15" width="200" height="150" onclick="flipImage(14);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 16" id="image16" width="200" height="150" onclick="flipImage(15);"></div>
+            </div>
+			
+            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 17" id="image17" width="200" height="150" onclick="flipImage(16);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 18" id="image18" width="200" height="150" onclick="flipImage(17);"></div>
+            </div>
+			
+			            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 19" id="image19" width="200" height="150" onclick="flipImage(18);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 20" id="image20" width="200" height="150" onclick="flipImage(19);"></div>
+            </div>
+			
+			<div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 21" id="image21" width="200" height="150" onclick="flipImage(20);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 22" id="image22" width="200" height="150" onclick="flipImage(21);"></div>
+            </div>
+			
+			            <div class="divTableRow">
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 23" id="image23" width="200" height="150" onclick="flipImage(22);"></div>
+                <div class="divTableCell"><img src="Blank.jpg" alt="Card 24" id="image24" width="200" height="150" onclick="flipImage(23);"></div>
+            </div>
+			
+	</div>
+</div>
+	
+      
+</body>
+</html>
