@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+button {
+  background-color: teal;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+button1 {
+  background-color: teal;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+button2 {
+  background-color: teal;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+body {
+	background-color: burlywood;
+}
