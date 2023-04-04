@@ -1,4 +1,5 @@
 // JavaScript Document
+alert( 'Hello, world!' );
 
 		let car = {
                 "manufacturer" : "Ford",
