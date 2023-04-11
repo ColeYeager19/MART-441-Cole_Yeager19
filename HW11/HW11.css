@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+#myCanvas {
+  border-color: burlywood;
+  border-style: solid;
+  border-width: 15px;
+  background-color: teal;
+}
