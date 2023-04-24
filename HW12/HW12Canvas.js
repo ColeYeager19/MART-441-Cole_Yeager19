@@ -7,7 +7,6 @@ var direction;
 var questions;
 var squareArray = [];
 var lives = 3;
-var collectible1, collectible2;
 var points = 0;
 $(document).ready(function(){
     
@@ -34,16 +33,6 @@ function setup()
             squareArray.push(new Square(data.squares[i].x,data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
         }
         drawSquare();
-    });
-    
-    collectible1 = new Collectible(100,100,50,50,"#0000FF");
-    collectible2 = new Collectible(400,400,100,100,"#00FF00");
-    $.getJSON("HW12Info2.json", function(data) {
-        for(var i = 0; i < data.collectible.length; i++)
-        {
-            collectibleArray.push(new collectible(data.collectible[i].x,data.collectible[i].y, data.collectible[i].h, data.collectible[i].w, data.collectible[i].color));
-        }
-        drawCollectible();
     });
     
 }
