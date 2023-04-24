@@ -37,9 +37,9 @@ function setup()
     });
 	
 	$.getJSON("HW12Info2.json", function(data) {
-        for(var i = 0; i < data.squares.length; i++)
+        for(var i = 0; i < data.collectible.length; i++)
         {
-            collArray.push(new Square(data.squares[i].x,data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
+            collArray.push(new Square(data.collectible[i].x,data.collectible[i].y, data.collectible[i].h, data.collectible[i].w, data.collectible[i].color));
         }
         drawColl();
     });
