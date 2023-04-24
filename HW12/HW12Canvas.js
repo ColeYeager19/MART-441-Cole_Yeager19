@@ -141,7 +141,7 @@ function drawSquare()
 
     ctx.font = "30px Arial";
     ctx.fillText("Lives: " + lives, 10, 50);  
-	ctx.fillText("Points: " + points, 10, 70);	
+	ctx.fillText("Points: " + points, 10, 80);	
 
 }
 
