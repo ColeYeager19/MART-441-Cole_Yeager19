@@ -104,7 +104,8 @@ function getKey(event)
         }
     
     }
-    drawSquare(); 
+    drawSquare();
+	drawColl();
     
 }
 
