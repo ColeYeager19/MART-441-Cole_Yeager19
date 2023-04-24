@@ -7,6 +7,8 @@ var direction;
 var questions;
 var squareArray = [];
 var lives = 3;
+var collectible1, collectible2;
+var points = 0;
 $(document).ready(function(){
     
     setup();  
@@ -24,7 +26,6 @@ function setup()
     canvas = document.getElementById("myCanvas");
     ctx = canvas.getContext("2d");
 
-    // create two objects
     square1 = new Square(100,100,50,50,"#0000FF");
     square2 = new Square(400,400,100,100,"#00FF00");
     $.getJSON("HW12Info.json", function(data) {
@@ -35,7 +36,15 @@ function setup()
         drawSquare();
     });
     
-
+    collectible1 = new Collectible(100,100,50,50,"#0000FF");
+    collectible2 = new Collectible(400,400,100,100,"#00FF00");
+    $.getJSON("HW12Info.json", function(data) {
+        for(var i = 0; i < data.collectible.length; i++)
+        {
+            collectibleArray.push(new collectible(data.collectible[i].x,data.collectible[i].y, data.collectible[i].h, data.collectible[i].w, data.collectible[i].color));
+        }
+        drawCollectible();
+    });
     
 }
 
