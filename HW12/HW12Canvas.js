@@ -6,6 +6,7 @@ var square1, square2;
 var direction;
 var questions;
 var squareArray = [];
+var collArray = [];
 var lives = 3;
 var points = 0;
 $(document).ready(function(){
@@ -33,6 +34,14 @@ function setup()
             squareArray.push(new Square(data.squares[i].x,data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
         }
         drawSquare();
+    });
+	
+	$.getJSON("HW12Info2.json", function(data) {
+        for(var i = 0; i < data.squares.length; i++)
+        {
+            collArray.push(new Square(data.squares[i].x,data.squares[i].y, data.squares[i].h, data.squares[i].w, data.squares[i].color));
+        }
+        drawColl();
     });
     
 }
@@ -101,19 +110,19 @@ function getKey(event)
 
 function moveUp()
 {
-    square1.y-=10;
+    square1.y-=2;
 }
 function moveDown()
 {
-    square1.y+=10;
+    square1.y+=2;
 }
 function moveRight()
 {
-    square1.x+=10;
+    square1.x+=2;
 }
 function moveLeft()
 {
-    square1.x-=10;
+    square1.x-=2;
 }
 
 function drawSquare()
@@ -127,6 +136,24 @@ function drawSquare()
     {
         ctx.fillStyle = squareArray[i].mainColor;
         ctx.fillRect(squareArray[i].x, squareArray[i].y, squareArray[i].width, squareArray[i].height);
+    }
+
+    ctx.font = "30px Arial";
+    ctx.fillText("Lives: " + lives, 10, 50);    
+
+}
+
+function drawColl()
+{
+    ctx.clearRect(0,0,800,600);
+    ctx.fillStyle = square1.mainColor; //mainColor
+    ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
+    ctx.fillStyle = square2.mainColor;
+    ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
+    for(var i = 0; i < collArray.length; i++)
+    {
+        ctx.fillStyle = collArray[i].mainColor;
+        ctx.fillRect(collArray[i].x, collArray[i].y, collArray[i].width, collArray[i].height);
     }
 
     ctx.font = "30px Arial";
