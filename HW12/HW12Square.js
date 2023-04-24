@@ -44,7 +44,7 @@ class Square{
     }
 }
 
-class Collectibles{
+class collectible{
 
     constructor(xCoord,yCoord,objectHeight,objectWidth, color)
     {
