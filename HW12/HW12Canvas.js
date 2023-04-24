@@ -139,7 +139,8 @@ function drawSquare()
     }
 
     ctx.font = "30px Arial";
-    ctx.fillText("Lives: " + lives, 10, 50);    
+    ctx.fillText("Lives: " + lives, 10, 50);  
+	ctx.fillText("Points: " + points, 10, 60);	
 
 }
 
@@ -157,7 +158,8 @@ function drawColl()
     }
 
     ctx.font = "30px Arial";
-    ctx.fillText("Lives: " + lives, 10, 50);    
+    ctx.fillText("Lives: " + lives, 10, 50);
+	ctx.fillText("Points: " + points, 10, 60);
 
 }
 
