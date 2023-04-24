@@ -147,20 +147,11 @@ function drawSquare()
 
 function drawColl()
 {
-    ctx.clearRect(0,0,800,600);
-    ctx.fillStyle = square1.mainColor; //mainColor
-    ctx.fillRect(square1.x, square1.y, square1.width, square1.height);
-    ctx.fillStyle = square2.mainColor;
-    ctx.fillRect(square2.x, square2.y, square2.width, square2.height);
     for(var i = 0; i < collArray.length; i++)
     {
         ctx.fillStyle = collArray[i].mainColor;
         ctx.fillRect(collArray[i].x, collArray[i].y, collArray[i].width, collArray[i].height);
     }
-
-    ctx.font = "30px Arial";
-    ctx.fillText("Lives: " + lives, 10, 50);
-	ctx.fillText("Points: " + points, 10, 70);
 
 }
 
