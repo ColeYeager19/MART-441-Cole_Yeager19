@@ -70,6 +70,21 @@ function getKey(event)
         moveRight();
         direction = "right";
     }
+	
+	var collTest = false;
+	for(var i = 0; i < collArray.length; i++)
+	{
+		collTest = hasCollided(square1,collArray[i]);
+		if(collTest == true)
+		{
+			break;
+		}
+	}
+	if(collTest)
+	{
+		points++;
+	}
+	
     var test = hasCollided(square1,square2);
     var test2 = false;
     for(var i = 0; i < squareArray.length; i++)
@@ -111,19 +126,19 @@ function getKey(event)
 
 function moveUp()
 {
-    square1.y-=2;
+    square1.y-=5;
 }
 function moveDown()
 {
-    square1.y+=2;
+    square1.y+=5;
 }
 function moveRight()
 {
-    square1.x+=2;
+    square1.x+=5;
 }
 function moveLeft()
 {
-    square1.x-=2;
+    square1.x-=5;
 }
 
 function drawSquare()
