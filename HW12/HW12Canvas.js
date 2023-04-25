@@ -77,6 +77,7 @@ function getKey(event)
 		collTest = hasCollided(square1,collArray[i]);
 		if(collTest == true)
 		{
+			collArray.splice(i,1);
 			break;
 		}
 	}
