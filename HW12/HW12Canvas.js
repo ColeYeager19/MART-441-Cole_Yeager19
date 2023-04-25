@@ -40,6 +40,7 @@ function setup()
         for(var i = 0; i < data.collectible.length; i++)
         {
             collArray.push(new Square(data.collectible[i].x,data.collectible[i].y, data.collectible[i].h, data.collectible[i].w, data.collectible[i].color));
+		console.log(collArray);
         }
         drawColl();
     });
@@ -78,6 +79,7 @@ function getKey(event)
 		if(collTest == true)
 		{
 			collArray.splice(i,1);
+			console.log(collArray);
 			break;
 		}
 	}
