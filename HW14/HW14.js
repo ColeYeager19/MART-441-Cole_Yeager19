@@ -17,7 +17,6 @@ function createBox() {
   cube.scale.x = 35; // SCALE
   cube.scale.y = 35; // SCALE
   cube.scale.z = 35; // SCALE
-//WE CHANGED THIS SHIT ABOVE
 
   animate();
 }
@@ -143,7 +142,7 @@ function getControls(camera, renderer) {
 
 function loadModel() {
   loader = new THREE.OBJLoader();
-  loader.load("/models/vagueSatelite.obj", function (object) {
+  loader.load("./models/vagueSatelite.obj", function (object) {
     object.rotation.z = Math.PI;
     modelObject = object;
     scene.add(object);
