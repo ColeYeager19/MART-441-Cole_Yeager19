@@ -9,7 +9,7 @@ function createBox() {
   // create a box
   var geometry = new THREE.BoxGeometry();
   var material = new THREE.MeshBasicMaterial({
-    color: 0x324ca8
+    color: 0x6D1464
   });
   cube = new THREE.Mesh(geometry, material);
   cube.position.set(100, -50, 50);
