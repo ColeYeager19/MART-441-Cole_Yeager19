@@ -142,7 +142,7 @@ function getControls(camera, renderer) {
 
 function loadModel() {
   loader = new THREE.OBJLoader();
-  loader.load("./models/vagueSatelite.obj", function (object) {
+  loader.load("../models/vagueSatelite.obj", function (object) {
     object.rotation.z = Math.PI;
     modelObject = object;
     scene.add(object);
